@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Car Dealership</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>CAR DEALERSHIP</h1>
+    <h2>Current account: <h2 id="accountAddress" style="color:red;"></h2></h2>
+
+    <input type="text" id="car-reg" placeholder="Add Car Registration Number">
+    <button type="submit" onclick="App.addCar()">Add Car</button>
+    <h2>Search Car.....</h2>
+    <input type="text" id="car-reg-query" placeholder="Car reg for search">
+    <button type="submit" onclick="App.searchCar()">Search</button>
+
+    <h4 style="color:red;" id="car-show"></h4>
+
+    <input type="text" id="car-reg-transfer" placeholder="Registration to transfer">
+    <input type="text" id="new-owner" placeholder="New Owner">
+    <button type="submit" onclick="App.transferOwner()">Transfer Ownership</button>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
